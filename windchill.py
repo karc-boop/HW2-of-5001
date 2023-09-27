@@ -22,14 +22,14 @@ def calculate_windchill(temperature, speed):
     12.94189674345419
 
     """
-    #converts the wind speed to kilometers per hour (kph)
+    # converts the wind speed to kilometers per hour (kph)
     conversion_value = 1.6
     speed_kph = speed * conversion_value
 
-    #converts the air temperature to Celsius for the calculation.
+    # converts the air temperature to Celsius for the calculation.
     celsius_temperature = convert_fahrenheit_to_celsius(temperature)
     
-    #computes the wind chill index in Celsius and converts it back to Fahrenheit
+    # computes the wind chill index in Celsius and converts back to Fahrenheit
     windchill_index_celsius = 13.12 + 0.6215 * celsius_temperature \
         - 11.37 * (speed_kph ** 0.16) + 0.3965 \
         * celsius_temperature * (speed_kph ** 0.16)
