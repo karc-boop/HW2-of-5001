@@ -1,0 +1,50 @@
+Written #1
+
+1A
+results = print_formatted("Hello, Keith!")
+
+1B
+the bigger one = get_max(10,9)
+
+1C
+result = log_base_two(23)
+
+
+Written #2
+
+The reason why line 3 will never execute is because in the line 2, a "return" funtion that contains x has been returned. 
+Once the "return" has been execute within a funtion, it will exist immediately withough excuting the following codes, one of which is line 3.
+
+
+Written #3
+
+3A
+Terminal:
+19
+18
+
+3B
+Terminal:
+19
+18
+19
+
+Written #4
+
+I would vote for the funtion#1.
+Reasons are as follow: 
+1. The returned value "sq" in function #1 can be reused in later more context while function 2 has ended its resuability.
+2. Function #1 is more coder-friendly when debugging while the function #2 print the result directly.
+3. Function #1 aligns more with the coding requirements which emphasizes clear, straightforward codes. Function#2 combines calculating and output function in one line, making it less well-defined and harder to use in different scenarios.
+
+
+Written #5
+
+5A
+def divide(x: int, y: int) -> int:
+    return x / y
+	
+5B
+Annotations is useful of providing efficient message to a third party in addition to codes and coder.
+For example, there is a plenty of Python libraries containing well defined functions for being used in bigger context.
+These annotations can be used by libraries and provide useful information regarding to the funcionalities, type pf parenthesis and type of output value.
